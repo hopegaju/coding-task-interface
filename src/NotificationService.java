@@ -1,5 +1,8 @@
 public interface NotificationService {
     void sendNotification(String message);
+    default void setDefaultPriority(String priority) {
+
+    }
 }
 class EmailNotification implements NotificationService {
     @Override
